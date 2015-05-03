@@ -1,6 +1,10 @@
 # Advanced JavaScript
 ## Express and Build Tools
 
+Setup 
+
+* [Install](install.md)
+
 Express Outline
 
 * [Intro To Express](intro_express.md)
