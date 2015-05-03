@@ -36,7 +36,7 @@ $ bower init
 
 We can install our package dependencies now using `bower install <package> --save`
 
-These pacakages will be saved to a `bower_components/` folder by default.
+These packages will be saved to a `bower_components/` folder by default.
 
 ```bash
 $ bower install angular --save
@@ -47,7 +47,7 @@ $ bower install angular --save
 Let's also install the `angular-route` package.
 
 ```bash
-$ bower insall angular-route --save
+$ bower install angular-route --save
 ```
 
 This is good enough for now. We shouldn't need to install anymore dependencies.
