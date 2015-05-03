@@ -178,6 +178,39 @@ userSchema.methods.checkPassword = function (pswrd) {
 
 
 
+## Viewing Your Data
+
+To view your data we want to try the following:
+
+```
+npm install mongo-express
+```
+
+and then set it up
+
+
+```
+mv node_modules/mongo-express/config.default.js node_modules/mongo-express/config.js
+```
+
+Now we edit the config file.
+
+
+```
+	useBasicAuth: false	
+
+```
+
+
+Then we run it to see our data
+
+
+```
+node node_modules/mongo-express/
+```
+
+
+
 
 
 
