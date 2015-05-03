@@ -1,4 +1,3 @@
-README.md
 # More Express
 ## Authentication and All That
 
