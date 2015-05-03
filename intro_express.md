@@ -5,7 +5,7 @@ The below is to demonstrate how Node can be used to create network applications.
 
 **server.js**
 
-```
+```js
 var http = require("http");
 
 function doStuff(req, res) {
@@ -19,6 +19,12 @@ var server = http.createServer(doStuff);
 server.listen(3000);
 
 ```
+If we copy this into our clipboard we can run it directly in node:
+
+```
+pbpaste | node
+```
+
 
 different ways to terminate a connection
 
@@ -39,7 +45,7 @@ transfer encoding = chunked # streaming!
 Let's take this a step further to create a simple file server in node.
 
 
-```
+```js
 var http = require("http");
 var fs = require('fs');
 var path = require('path');
@@ -125,7 +131,7 @@ If we just ran `node nameOfFile.js`, node will not update its responses after th
 
 The following example, shows a few different ways to get routes working in Node. A `route` is a combination of a url pattern + HTTP Verb (get, post, delete, update)
 
-```
+```js
 var express = require('express');
 var app = express();
 
@@ -147,9 +153,9 @@ app.get("/add/:x/:y", function(req, res) {
 
 app.listen(3000);
 ```
-In addition to having routes where diffrent portions of the url are diffrent paramaters. We can use the generic string of the url in our route logic.
+In addition to having routes where different portions of the url are diffrent parameters, we can use the generic string of the url in our route logic.
 
-```
+```js
 app.get("/add/*", function(req, res) {
   var myParams = req.params[0].split("/")
   var result = myParams.reduce( function(total, num){ return total + parseInt(num) }, 0)
