@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "bcrypt": "^0.8.2",
+    "body-parser": "^1.12.3",
+    "express": "^4.12.3",
+    "mongo-express": "^0.21.0",
+    "mongoose": "^4.0.2"
+  }
+}
